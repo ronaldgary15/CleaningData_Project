@@ -1,0 +1,92 @@
+Data_Dictionary.txt
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+
+ "subject.id" - test subject identification number (range 1-30)
+
+"test.train" - identify test observation or training observation                     
+"activity"   - test activity being observed (Walking, Walking_upstairs, Walking_downstairs, Sitting, Standing, Laying)
+"tBodyAcc-mean()-X" - mean body accelerometer reading in X axis.
+"tBodyAcc-mean()-Y" - mean body accelerometer reading in Y axis.              
+"tBodyAcc-mean()-Z" - mean body accelerometer reading in Z axis.             
+"tBodyAcc-std()-X"  - standard deviation for body accelerometer reading in X axis
+"tBodyAcc-std()-Y"  - standard deviation for body accelerometer reading in Y axis
+"tBodyAcc-std()-Z"  - standard deviation for body accelerometer reading in Z axis
+"tGravityAcc-mean()-X" - mean for gravity accelrometer reading in X axis
+"tGravityAcc-mean()-Y" - mean for gravity accelrometer reading in Y axis
+"tGravityAcc-mean()-Z" - mean for gravity accelrometer reading in Z axis
+"tGravityAcc-std()-X"  - standard deviation for gravity accelerometer reading in X axis
+"tGravityAcc-std()-Y"  - standard deviation for gravity accelerometer reading in Y axis
+"tGravityAcc-std()-Z"  - standard deviation for gravity accelerometer reading in Z axis
+"tBodyAccJerk-mean()-X" - mean for body linear acceleration derviced in time to obtain the jerk signal in the X axis
+"tBodyAccJerk-mean()-Y" - mean for body linear acceleration derviced in time to obtain the jerk signal in the Y axis           
+"tBodyAccJerk-mean()-Z" - mean for body linear acceleration derviced in time to obtain the jerk signal in the Z axis          
+"tBodyAccJerk-std()-X" - standard deviation for body linear acceleration derviced in time to obtain the jerk signal in the X axis
+"tBodyAccJerk-std()-Y" - standard deviation for body linear acceleration derviced in time to obtain the jerk signal in the Y axis
+"tBodyAccJerk-std()-Z" - standard deviation for body linear acceleration derviced in time to obtain the jerk signal in the Z axis
+"tBodyGyro-mean()-X" - mean for body angular velocity in the X axis            
+"tBodyGyro-mean()-Y" - mean for body angular velocity in the Y axis 
+"tBodyGyro-mean()-Z" - mean for body angular velocity in the Z axis 
+"tBodyGyro-std()-X" - standard deviation for body angular velocity in the X axis 
+"tBodyGyro-std()-Y" - standard deviation for body angular velocity in the Y axis 
+"tBodyGyro-std()-Z" - standard deviation for body angular velocity in the Z axis 
+"tBodyGyroJerk-mean()-X" - mean for body angular velocity derviced in time to obtain the jerk signal in the X axis   
+"tBodyGyroJerk-mean()-Y" - mean for body angular velocity derviced in time to obtain the jerk signal in the Y axis   
+"tBodyGyroJerk-mean()-Z" - mean for body angular velocity derviced in time to obtain the jerk signal in the Z axis   
+"tBodyGyroJerk-std()-X" - standard deviation for body angular velocity derviced in time to obtain the jerk signal in the X axis 
+"tBodyGyroJerk-std()-Y" - standard deviation for body angular velocity derviced in time to obtain the jerk signal in the Y axis 
+"tBodyGyroJerk-std()-Z" - standard deviation for body angular velocity derviced in time to obtain the jerk signal in the Z axis
+"tBodyAccMag-mean()" - mean of the magnitude of three-dimensional signals calculated using the Euclidean norm  for the body accelerometer           
+"tBodyAccMag-std()" - standard deviation of the magnitude of three-dimensional signals calculated using the Euclidean norm  
+"tGravityAccMag-mean()" - mean of the gravity accelerometer magnitude
+"tGravityAccMag-std()" - standard deviation of the gravity accelerometer magnitude
+"tBodyAccJerkMag-mean()"  - mean magnitude of three-dimensional signals calculated using the Euclidean norm for the body accelerometer derived in tome to obtain the jerk signal      
+"tBodyAccJerkMag-std()" - standard deviation of the magnitude of three-dimensional signals calculated using the Euclidean norm for the body accelerometer derived in time to obtain the jerk signal 
+"tBodyGyroMag-mean()" - mean of the magnitude of three-dimensional signals calculated using the Euclidean norm for body angular velocity 
+"tBodyGyroMag-std()"  - standard deviation of the magnitude of three-dimensional signals calculated using the Euclidean norm for body angular velocity
+"tBodyGyroJerkMag-mean()" mean of the magnitude of three-dimensional signals calculated using the Euclidean norm for body angular velocity derviced in time to obtain the jerk signal
+"tBodyGyroJerkMag-std()" - standard deviation of the magnitude of three-dimensional signals calculated using the Euclidean norm for body angular velocity derviced in time to obtain the jerk signal
+"fBodyAcc-mean()-X" - Fast Fourier Transform of mean body accelerometer reading in X axis.
+"fBodyAcc-mean()-Y" - Fast Fourier Transform of mean body accelerometer reading in Y axis.
+"fBodyAcc-mean()-Z" - Fast Fourier Transform of mean body accelerometer reading in Z axis.
+"fBodyAcc-std()-X" - Fast Fourier Transform of mean body accelerometer reading in X axis.
+"fBodyAcc-std()-Y" - Fast Fourier Transform of mean body accelerometer reading in Y axis.
+"fBodyAcc-std()-Z" - Fast Fourier Transform of mean body accelerometer reading in Z axis.
+"fBodyAcc-meanFreq()-X" - Weighted average of the frequency components to obtain a mean frequency of the Fast Fourier Transform of mean body accelerometer reading in X axis.     
+"fBodyAcc-meanFreq()-Y" - Weighted average of the frequency components to obtain a mean frequency of the Fast Fourier Transform of mean body accelerometer reading in Y axis.
+"fBodyAcc-meanFreq()-Z" - Weighted average of the frequency components to obtain a mean frequency of the Fast Fourier Transform of mean body accelerometer reading in Z axis.
+"fBodyAccJerk-mean()-X" - Fast Fourier Transform of mean for body linear acceleration derviced in time to obtain the jerk signal in the X axis
+"fBodyAccJerk-mean()-Y" - Fast Fourier Transform of mean for body linear acceleration derviced in time to obtain the jerk signal in the Y axis
+"fBodyAccJerk-mean()-Z" - Fast Fourier Transform of mean for body linear acceleration derviced in time to obtain the jerk signal in the Z axis
+"fBodyAccJerk-std()-X" - Fast Fourier Transform of the standard deviation for body linear acceleration derviced in time to obtain the jerk signal in the X axis
+"fBodyAccJerk-std()-Y" - Fast Fourier Transform of the standard deviation  for body linear acceleration derviced in time to obtain the jerk signal in the Y axis
+"fBodyAccJerk-std()-Z" - Fast Fourier Transform of the standard deviation  for body linear acceleration derviced in time to obtain the jerk signal in the Z axis
+"fBodyAccJerk-meanFreq()-X" - Weighted average of the frequency components to obtain a mean frequency of the Fast Fourier Transform of mean for body linear acceleration derviced in time to obtain the jerk signal in the X axis
+"fBodyAccJerk-meanFreq()-Y" - Weighted average of the frequency components to obtain a mean frequency of the Fast Fourier Transform of mean for body linear acceleration derviced in time to obtain the jerk signal in the Y axis      
+"fBodyAccJerk-meanFreq()-Z" - Weighted average of the frequency components to obtain a mean frequency of the Fast Fourier Transform of mean for body linear acceleration derviced in time to obtain the jerk signal in the Z axis      
+"fBodyGyro-mean()-X" - Fast Fourier Transform of the mean for body angular velocity in the X axis              
+"fBodyGyro-mean()-Y" - Fast Fourier Transform of the mean for body angular velocity in the Y axis    
+"fBodyGyro-mean()-Z" - Fast Fourier Transform of the mean for body angular velocity in the Z axis    
+"fBodyGyro-std()-X" - Fast Fourier Transform of the standard deviation for body angular velocity in the X axis    
+"fBodyGyro-std()-Y" - Fast Fourier Transform of the standard deviation for body angular velocity in the Y axis 
+"fBodyGyro-std()-Z" - Fast Fourier Transform of the standard deviation for body angular velocity in the Z axis 
+"fBodyGyro-meanFreq()-X" - Weighted average of the frequency components to obtain a mean frequency of the Fast Fourier Transform of the mean for body angular velocity in the X axis  
+"fBodyGyro-meanFreq()-Y" - Weighted average of the frequency components to obtain a mean frequency of the Fast Fourier Transform of the mean for body angular velocity in the Y axis
+"fBodyGyro-meanFreq()-Z" - Weighted average of the frequency components to obtain a mean frequency of the Fast Fourier Transform of the mean for body angular velocity in the Z axis
+"fBodyAccMag-mean()" - Fast Fourier Transform of the mean of the magnitude of three-dimensional signals calculated using the Euclidean norm  for the body accelerometer
+"fBodyAccMag-std()" - Fast Fourier Transform of the standard deviation of the magnitude of three-dimensional signals calculated using the Euclidean norm  for the body accelerometer
+"fBodyAccMag-meanFreq()" - Weighted average of the frequency components to obtain a mean frequency of the Fast Fourier Transform of 
+"fBodyBodyAccJerkMag-mean()" - Fast Fourier Transform of the mean magnitude of three-dimensional signals calculated using the Euclidean norm for the body accelerometer derived in tome to obtain the jerk signal
+"fBodyBodyAccJerkMag-std()" - Fast Fourier Transform of the standard deviation of the magnitude of three-dimensional signals calculated using the Euclidean norm for the body accelerometer derived in tome to obtain the jerk signal
+"fBodyBodyAccJerkMag-meanFreq()" - Weighted average of the frequency components to obtain a Fast Fourier Transform of the mean magnitude of three-dimensional signals calculated using the Euclidean norm for the body accelerometer derived in tome to obtain the jerk signal
+"fBodyBodyGyroMag-mean()" - Fast Fourier Transform of the mean of the magnitude of three-dimensional signals calculated using the Euclidean norm for body angular velocity       
+"fBodyBodyGyroMag-std()" - Fast Fourier Transform of the standard deviation of the magnitude of three-dimensional signals calculated using the Euclidean norm for body angular velocity       
+"fBodyBodyGyroMag-meanFreq()" - Weighted average of the frequency components to obtain a mean frequency of the Fast Fourier Transform of the mean of the magnitude of three-dimensional signals calculated using the Euclidean norm for body angular velocity
+"fBodyBodyGyroJerkMag-mean()" - Fast Fourier Transform of the mean of the magnitude of three-dimensional signals calculated using the Euclidean norm for body angular velocity derviced in time to obtain the jerk signal
+"fBodyBodyGyroJerkMag-std()" - Fast Fourier Transform of the standard deviation of the magnitude of three-dimensional signals calculated using the Euclidean norm for body angular velocity derviced in time to obtain the jerk signal
+"fBodyBodyGyroJerkMag-meanFreq()" - Weighted average of the frequency components to obtain a Fast Fourier Transform of the mean of the magnitude of three-dimensional signals calculated using the Euclidean norm for body angular velocity derviced in time to obtain the jerk signal
